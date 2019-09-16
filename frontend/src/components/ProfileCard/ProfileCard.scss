@@ -1,0 +1,48 @@
+.ProfileCard {
+  max-width: 600px;
+  margin: 30px auto;
+  color: #05212A;
+
+  .socials {
+    margin-top: 15px;
+  }
+
+  img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+    border: 3px solid #C38927;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h1, h2 {
+    display: inline-block;
+  }
+  
+  a {
+    color: rgb(12, 78, 100);
+    text-decoration: none;
+  }
+
+  @media (min-width: 992px) {
+    h1 {
+      margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    h1 {
+      margin-left: initial;
+      margin-top: 15px;
+      display: block;
+    }
+  }
+  
+}

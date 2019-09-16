@@ -1,0 +1,23 @@
+.notable-summoners-section {
+  margin-top: 40px;
+  text-align: center;
+  color: #05212A;
+
+  .content-loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #error {
+    margin: 20px 0;
+    font-size: 20px;
+    color: red;
+  }
+
+  @media (max-width: 767px){   
+    .rank-card, .content-loader {
+      order: 1;
+    }
+  }
+}

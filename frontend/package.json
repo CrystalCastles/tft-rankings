@@ -1,0 +1,45 @@
+{
+  "name": "tft-rankings",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "mdbreact": "^4.19.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.10",
+    "react-content-loader": "^4.2.2",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "react-spring": "^8.0.27",
+    "react-visibility-sensor": "^5.1.1",
+    "shortid": "^2.2.14"
+  },
+  "scripts": {
+    "start": "PORT=8080 react-scripts start",
+    "build": "cp ./src/config.js ./src/config.bak.js && cp ./src/config-prod.js ./src/config.js && react-scripts build && mv ./src/config.bak.js ./src/config.js",
+    "deploy": "aws s3 cp --recursive ./build s3://tftrankings.com",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
