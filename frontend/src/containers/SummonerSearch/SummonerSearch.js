@@ -39,7 +39,7 @@ class SummonerSearch extends Component {
     let postData = () => {
       this.setState({loading: true, data: null, error: null})
       axios.post(`${API_HOST}/summoner-info/summoner-name`, 
-        {summonerName: this.state.name,
+        {summonerName: encodeURIComponent(this.state.name),
         region: this.state.region})
       .then(response=> {
         if(response.data.length > 0) {
@@ -111,7 +111,7 @@ class SummonerSearch extends Component {
           {({ isVisible }) => (
             <Spring delay={300} to={{ opacity: isVisible ? 1 : 0, transform: isVisible ? "translateY(0)" : "translateY(400px)"}}>
               {props => 
-                <Col style={{...props}}>
+                <Col className="card-col" style={{...props}}>
                   <RankCard data={this.state.data}></RankCard>
                 </Col>
               }
@@ -161,7 +161,7 @@ class SummonerSearch extends Component {
                         <SearchBar text={this.state.name} handleChange={this.handleOnInputChange}/>
                         <SubmitButton />
                       </form>
-                  </Col>
+                    </Col>
                   }
                 </Spring>
               )}

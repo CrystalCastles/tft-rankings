@@ -12,7 +12,7 @@ router.post("/region", async(req, res, next) => {
 
 async function getTFTGrandmasters(region) {
     let tftGrandmasters;
-      await fetch(`https://${region}.api.riotgames.com/lol/league/v4/grandmasterleagues/by-queue/RANKED_TFT?api_key=${API_KEY}`)
+      await fetch(`https://${region}.api.riotgames.com/tft/league/v1/grandmaster?api_key=${API_KEY}`)
         .then(response => response.json())
         .then(data => {
             tftGrandmasters = data;

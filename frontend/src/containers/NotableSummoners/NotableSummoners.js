@@ -37,7 +37,7 @@ const notables = [
     twitter: 'scarra'
   },
   {
-    name: 'YasuoAndy',
+    name: 'DisguisedToast69',
     screenName: 'DisguisedToast',
     region: 'na1',
     icon: 'pfp-dt',
@@ -52,14 +52,14 @@ const notables = [
     twitch: 'keanelol',
     twitter: 'ly_keane'
   },
-  {
-    name: 'Kyo9487',
-    screenName: 'Kyo大叔',
-    region: 'na1',
-    icon: 'pfp-kyo',
-    twitch: 'kyo1984123',
-    twitter: 'kyo1984123'
-  },
+  // {
+  //   name: 'Kyo9487',
+  //   screenName: 'Kyo大叔',
+  //   region: 'na1',
+  //   icon: 'pfp-kyo',
+  //   twitch: 'kyo1984123',
+  //   twitter: 'kyo1984123'
+  // },
   {
     name: 'Becca Tilts',
     screenName: 'Becca',
@@ -68,14 +68,14 @@ const notables = [
     twitch: 'becca',
     twitter: 'beccatilts'
   },
-  {
-    name: 'Byronze',
-    screenName: 'Reckful',
-    region: 'na1',
-    icon: 'pfp-reckful',
-    twitch: 'reckful',
-    twitter: 'byronbernstein'
-  },
+  // {
+  //   name: 'Byronze',
+  //   screenName: 'Reckful',
+  //   region: 'na1',
+  //   icon: 'pfp-reckful',
+  //   twitch: 'reckful',
+  //   twitter: 'byronbernstein'
+  // },
 ]
 
 class NotableSummoners extends Component {

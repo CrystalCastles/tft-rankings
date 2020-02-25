@@ -1,6 +1,7 @@
 .summoner-search-section {
   height: 100vh;
   overflow-x: hidden;
+  padding-bottom: 10px;
 
   .container {
     position: relative;
@@ -42,6 +43,14 @@
   .form-container {
     margin-top: 50px;
     text-align: center;
+  }
+  
+  .card-col {
+    margin-top: 30px;
+  }
+
+  .card-col > .RankCard {
+    margin: 0 auto;
   }
 }
 

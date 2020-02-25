@@ -46,7 +46,7 @@ router.post('/region', async(req, res) => {
 
 async function getTFTChallengers(region) {
     let tftChallengers; 
-    await fetch(`https://${region}.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_TFT?api_key=${API_KEY}`)
+    await fetch(`https://${region}.api.riotgames.com/tft/league/v1/challenger?api_key=${API_KEY}`)
         .then(res => res.json())
         .then(data => {
             tftChallengers = data;

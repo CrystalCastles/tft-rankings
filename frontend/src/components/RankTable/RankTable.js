@@ -4,7 +4,7 @@ import { MDBDataTable } from 'mdbreact';
 import './RankTable.scss';
 
 const rankTable = (props) => {
-  const data = props.data;
+  const data = props.data ? props.data : [];
 
   const compare = (a, b) => {
     const lpA = a.leaguePoints;

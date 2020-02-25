@@ -15,7 +15,6 @@ const regionSelector = (props) => {
       <option value="oc1">OCE</option>
       <option value="tr1">TR</option>
       <option value="ru">RU</option>
-      <option value="pbe1">PBE</option>
     </select>
   )
 }
