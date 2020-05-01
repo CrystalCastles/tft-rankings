@@ -44,22 +44,22 @@ const notables = [
     twitch: 'disguisedtoast',
     twitter: 'disguisedtoast'
   },
-  {
-    name: 'Keane tf',
-    screenName: 'TSM Keane',
-    region: 'na1',
-    icon: 'pfp-keane',
-    twitch: 'keanelol',
-    twitter: 'ly_keane'
-  },
   // {
-  //   name: 'Kyo9487',
-  //   screenName: 'Kyo大叔',
+  //   name: 'Keane tf',
+  //   screenName: 'TSM Keane',
   //   region: 'na1',
-  //   icon: 'pfp-kyo',
-  //   twitch: 'kyo1984123',
-  //   twitter: 'kyo1984123'
+  //   icon: 'pfp-keane',
+  //   twitch: 'keanelol',
+  //   twitter: 'ly_keane'
   // },
+  {
+    name: 'Kyo9487',
+    screenName: 'Kyo大叔',
+    region: 'na1',
+    icon: 'pfp-kyo',
+    twitch: 'kyo1984123',
+    twitter: 'kyo1984123'
+  },
   {
     name: 'Becca Tilts',
     screenName: 'Becca',
